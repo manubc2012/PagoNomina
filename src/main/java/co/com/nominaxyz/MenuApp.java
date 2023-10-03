@@ -33,20 +33,20 @@ public class MenuApp {
                 case 2:
                     Empleado empleado = new Empleado();
                     System.out.println("Cual es el cargo de este empleado");
-                    String cargoAux = sc.nextLine();
+                    String cargoAux = sc.next();
                     Cargo y = validarCargo(cargoAux);
-                    if(y  == null){
-                        System.out.println("El cargo no existe, no se puede crear el empleado");
-                    }else{
+                    if(y != null){
                         empleado.crearEmpleado(y);
                         empleadosArray.add(empleado);
                         System.out.println("El empleado ha sido creado");
+                    }else{
+                        System.out.println("El cargo no existe, no se puede crear el empleado");
                     }
                     break;
                 case 3:
                     Nomina nomina = new Nomina();
                     System.out.println("Ingrese el id del empleado");
-                    String idUser = sc.nextLine();
+                    String idUser = sc.next();
                     Empleado user = validarEmpleado(idUser);
                     boolean siExiste = validarNomina(idUser);
 
@@ -66,7 +66,7 @@ public class MenuApp {
                 case 4:
                     System.out.println("Usted va a imprimir la colilla de un Usuario");
                     System.out.println("Ingrese el id del Usuario");
-                    String idColilla = sc.nextLine();
+                    String idColilla = sc.next();
                     boolean siExiste2 = false;
                     for(Nomina x: nominasArray){
                         if (x.getEmpleado().getIdUsuario().equalsIgnoreCase(idColilla)){

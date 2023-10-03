@@ -44,7 +44,7 @@ public class Usuario extends ServiceUtil {
     @Override
     public void crearEmpleado(Cargo cargo) {
         System.out.println("Ingrese el id del empleado");
-        this.idUsuario = sc.nextLine();
+        this.idUsuario = sc.next();
         System.out.println("Ingrese el nombre del empleado");
         this.nombre = sc.next();
         System.out.println("Ingrese el apellido del empleado");

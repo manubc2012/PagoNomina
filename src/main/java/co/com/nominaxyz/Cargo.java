@@ -39,7 +39,7 @@ public class Cargo {
         System.out.println("Ingrese el id del cargo: ");
         this.idCargo = sc.nextInt();
         System.out.println("Ingrese el nombre del cargo: ");
-        this.nombreCargo = sc.nextLine();
+        this.nombreCargo = sc.next();
         System.out.println("Ingrese el salario del cargo: ");
         this.salario = sc.nextDouble();
     }

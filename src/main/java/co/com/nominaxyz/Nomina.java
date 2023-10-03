@@ -63,7 +63,7 @@ public class Nomina {
                 "ID nomina: " + this.idNomina + "\n" +
         "Salario Final: " + this.salarioFinal + "\n" +
                 "Nombre: " + this.empleado.getNombre() + "\n" +
-                "Apellido; " + this.empleado.getApellido() + "\n" +
+                "Apellido: " + this.empleado.getApellido() + "\n" +
                 "Cargo: " + this.empleado.getCargo().getNombreCargo() + "\n" +
                 "Area: " + this.empleado.getArea());
     }
