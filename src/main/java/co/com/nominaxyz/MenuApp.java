@@ -19,7 +19,8 @@ public class MenuApp {
             System.out.println("2. Crear Empleado");
             System.out.println("3. Crear Nómina");
             System.out.println("4. imprimir colilla de pago de Nómina");
-            System.out.println("5. Salir");
+            System.out.println("5. Ver empleado");
+            System.out.println("6. Salir");
             int opc= sc.nextInt();
             //sc.skip("\n");
 
@@ -75,13 +76,23 @@ public class MenuApp {
                             break;
                         }
                     }
-
                     if(!siExiste2){
                         System.out.println("No existe una colilla de nómina con ese id");
-
                     }
                     break;
                 case 5:
+                    System.out.println("Usted va a ver un empleado");
+                    System.out.println("Ingrese el id del usuario");
+                    String IdUser2 = sc.next();
+                    Empleado user2 = validarEmpleado(IdUser2);
+                    if(user2 == null){
+                        System.out.println("El empleado no existe");
+
+                    } else{
+                        user2.verEmpleado();
+                    }
+                    break;
+                case 6:
                     salir = false;
                     System.out.println("Usted va a salir del sistema");
                     break;
@@ -119,5 +130,4 @@ public class MenuApp {
         }
         return false;
     }
-
 }

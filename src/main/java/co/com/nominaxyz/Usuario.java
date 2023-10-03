@@ -58,9 +58,9 @@ public class Usuario extends ServiceUtil {
         System.out.println();
         System.out.println(
                 "IdUsuario=" + this.idUsuario + "\n"  +
-                        "Nombre='" + this.nombre + "\n"  +
-                        "Apellido='" + this.apellido + "\n" +
-                        "Correo='" + this.correo
+                        "Nombre=" + this.nombre + "\n"  +
+                        "Apellido=" + this.apellido + "\n" +
+                        "Correo=" + this.correo
         );
 
     }
